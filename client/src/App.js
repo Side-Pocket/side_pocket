@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <Header></Header>
+      <Footer></Footer>
       <p>{message}</p>
     </div>
   );
