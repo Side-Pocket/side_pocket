@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Header from './Components/Header';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <h1>React + Node.js App</h1>
+      <Header></Header>
       <p>{message}</p>
     </div>
   );
