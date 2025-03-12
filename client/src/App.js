@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import HeroSection from "./Components/HeroSection";
+
 
 function App() {
   const [message, setMessage] = useState("");
@@ -15,8 +17,10 @@ function App() {
   return (
     <div>
       <Header></Header>
+      <HeroSection></HeroSection>
       <Footer></Footer>
-      <p>{message}</p>
+
+     
     </div>
   );
 }
