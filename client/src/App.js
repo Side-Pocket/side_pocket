@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
+// import { Router, Route, Routes } from "react-router";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -14,9 +18,14 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
-      <Footer></Footer>
-      <p>{message}</p>
+      <Router>
+      <Header />
+      <Routes>
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      <Footer />
+    </Router>
     </div>
   );
 }

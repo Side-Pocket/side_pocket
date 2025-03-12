@@ -1,16 +1,32 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const cors = require("cors");
-require("dotenv").config();
+const dotenv = require("dotenv");
 
+dotenv.config();
 const app = express();
-app.use(cors());
 app.use(express.json());
+app.use(cors());
+
+const authRoutes = require("./routes/auth");
+app.use("/auth", authRoutes);
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true })); 
+
+
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => console.log("MongoDB Connected"))
+  .catch(err => console.log(err));
+
+app.listen(3000, () => console.log("Server running on port 3000"));
 
 app.get("/", (req, res) => {
-  res.send("Server is running!");
+  res.send("Working properly...");
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.get("/signup", (req, res) => {
+  res.status(400).json({ message: "Signup page does not support GET requests" });
 });
