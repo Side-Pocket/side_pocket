@@ -24,13 +24,16 @@ function App() {
 
       <Router>
       <Header />
+      
       <Routes>
+      <Route path="/" element={<Hero />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Routes>
+    
       <Footer />
     </Router>
-    <Hero/>
+   
     </div>
   );
 }
