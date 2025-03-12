@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import Hero from './components/HeroSection';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
-
+    <Hero/>
     </div>
   );
 }

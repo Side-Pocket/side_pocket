@@ -1,6 +1,6 @@
 import React from "react";
 import index from "../index.css";
-import logo from "../Assests/Side_pocket_logo.svg"
+import logo from "../assests/Side_pocket_logo.svg"
 const HeroSection=()=>{
     return(
         <>
