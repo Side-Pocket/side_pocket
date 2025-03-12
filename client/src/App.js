@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 // import { Router, Route, Routes } from "react-router";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+
 
 function App() {
   const [message, setMessage] = useState("");
@@ -18,6 +20,7 @@ function App() {
 
   return (
     <div>
+
       <Router>
       <Header />
       <Routes>
@@ -26,6 +29,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+
     </div>
   );
 }
