@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Hero from './components/HeroSection';
+import FeaturedJobs from "./components/FeaturedJobs";
 
 
 function App() {
@@ -26,14 +27,20 @@ function App() {
       <Header />
       
       <Routes>
-      <Route path="/" element={<Hero />} />
+      <Route path="/" element={
+          <>
+            <Hero />
+            <FeaturedJobs />  
+          </>
+        } />
+  
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     
       <Footer />
     </Router>
-   
+ 
     </div>
   );
 }
