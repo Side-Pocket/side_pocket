@@ -9,7 +9,7 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Hero from './components/HeroSection';
 import FeaturedJobs from "./components/FeaturedJobs";
-
+import PostJobForm from "./components/PostJob";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -30,7 +30,8 @@ function App() {
       <Route path="/" element={
           <>
             <Hero />
-            <FeaturedJobs />  
+            <FeaturedJobs /> 
+            <PostJobForm /> 
           </>
         } />
   
@@ -40,6 +41,7 @@ function App() {
     
       <Footer />
     </Router>
+    
  
     </div>
   );
