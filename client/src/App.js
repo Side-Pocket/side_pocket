@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
+
 function App() {
   const [message, setMessage] = useState("");
 
@@ -14,7 +15,7 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
+      <div><Header></Header></div>
       <Footer></Footer>
       <p>{message}</p>
     </div>

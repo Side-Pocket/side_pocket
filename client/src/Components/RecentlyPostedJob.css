@@ -1,0 +1,45 @@
+.recently-posted-job{
+    height: 100vh;
+  
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-family: 'montserrat';
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: #fff;
+    align-self: center;
+}
+.recently-posted-job-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+    position: relative;
+    flex-direction: column;
+ 
+    width: 50rem;
+}
+.img{ 
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin-right: 20px;
+    border-radius: 10rem; 
+    object-fit: cover;
+}
+.secondRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    justify-content: space-between;
+}
