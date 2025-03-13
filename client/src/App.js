@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import React, { useEffect, useState } from "react";
+// import axios from "axios";
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -8,17 +8,17 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Hero from './components/HeroSection';
-import FeaturedJobs from "./components/FeaturedJobs";
+import FeaturedJobs from './components/FeaturedJobs';
 
 
 function App() {
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
 
-  useEffect(() => {
-    axios.get("http://localhost:5000")
-      .then(response => setMessage(response.data))
-      .catch(error => console.log(error));
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:5000")
+  //     .then(response => setMessage(response.data))
+  //     .catch(error => console.log(error));
+  // }, []);
 
   return (
     <div>
@@ -40,7 +40,8 @@ function App() {
     
       <Footer />
     </Router>
- 
+
+
     </div>
   );
 }

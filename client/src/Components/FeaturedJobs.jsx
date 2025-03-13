@@ -43,7 +43,7 @@ const FeaturedJobs = () => {
                   <span className="font-semibold">Bid - {job.bid}</span>
                   <span className="text-gray-600">Time remaining - {job.timeRemaining}</span>
                 </div>
-                <img src={job.image} alt={job.title} className="w-full h-[400px] object-cover rounded-xl" />
+                <img src={job.image} alt={job.title} className="w-full h-[400px] object-cover " />
               </div>
               <div className="p-4 flex justify-between">
                 <span className="font-medium">{job.title}</span>
