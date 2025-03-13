@@ -9,6 +9,7 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Hero from './components/HeroSection';
 import FeaturedJobs from './components/FeaturedJobs';
+import RecentlyPostedJobs from './components/RecentlyPostedJobs';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <>
             <Hero />
             <FeaturedJobs />  
+            <RecentlyPostedJobs/>
           </>
         } />
   
