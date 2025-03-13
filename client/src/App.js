@@ -8,6 +8,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Hero from './components/HeroSection';
+
+import PostJobForm from "./components/PostJob";
+
 import FeaturedJobs from './components/FeaturedJobs';
 import RecentlyPostedJobs from './components/RecentlyPostedJobs';
 
@@ -31,8 +34,11 @@ function App() {
       <Route path="/" element={
           <>
             <Hero />
+
             <FeaturedJobs />  
             <RecentlyPostedJobs/>
+             <PostJobForm />
+
           </>
         } />
   
@@ -42,7 +48,6 @@ function App() {
     
       <Footer />
     </Router>
-
 
     </div>
   );

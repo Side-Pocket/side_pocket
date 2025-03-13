@@ -5,7 +5,7 @@ const Footer = () => {
         fontFamily: "Montserrat, sans-serif", // Capital "F" in "fontFamily"
         fontWeight: "520", // Capital "W" in "fontWeight",
         position: "relative",
-        top: "100vh"
+        
       };
   return (
     <footer className="bg-gray-200 text-amber-800 text-center p-4" style={styles}>
