@@ -17,7 +17,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/auth/signup", user);
+      await axios.post("http://localhost:5000/auth/signup", user);
       navigate("/login"); // Redirect after signup
     } catch (error) {
       console.error("Signup error:", error.response?.data || error.message);
