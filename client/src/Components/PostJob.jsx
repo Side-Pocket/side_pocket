@@ -30,8 +30,8 @@ const PostJobForm = () => {
 
   return (
     // <div className="bg-white ">
-    <div className=" bg-white flex justify-center items-center h-full w-full">
-      <div className="bg-white p-8 shadow-lg rounded-lg max-w-2xl w-full mx-auto">
+    <div className=" bg-white flex justify-center items-center h-full w-full p-10">
+      <div className="bg-white p-8 shadow-2xl rounded-lg max-w-2xl w-full mx-auto">
         <h1 className="text-3xl font-semibold text-center mb-6">Post a Job</h1>
 
         <form onSubmit={handleSubmit}>

@@ -46,7 +46,7 @@ function App() {
 
             <FeaturedJobs />  
             <RecentlyPostedJobs/>
-            <div ref={postJobRef} className="bg-gray-200 p-8">
+            <div ref={postJobRef} className="bg-gray-200 p-0">
              <PostJobForm />
              </div>
 
