@@ -10,11 +10,12 @@ const PostJobForm = () => {
   const [budget, setBudget] = useState("");
   const [location, setLocation] = useState("");
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const jobData = { jobTitle, jobCategory, jobDescription, budget, location };
     try {
-      const response = await axios.post("http://localhost:5000/api/jobs/post-job", jobData); // Ensure the URL is correct
+      const response = await axios.post("http://localhost:5000/api/jobs/post-job", jobData);
       console.log("Job posted successfully:", response.data);
       alert("Job posted successfully!");
       setJobTitle("");
@@ -28,8 +29,9 @@ const PostJobForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen  m-12 w-full">
-      <div className="bg-white p-8 shadow-lg rounded-lg max-w-2xl w-full">
+    // <div className="bg-white ">
+    <div className=" bg-white flex justify-center items-center h-full w-full">
+      <div className="bg-white p-8 shadow-lg rounded-lg max-w-2xl w-full mx-auto">
         <h1 className="text-3xl font-semibold text-center mb-6">Post a Job</h1>
 
         <form onSubmit={handleSubmit}>
@@ -105,7 +107,8 @@ const PostJobForm = () => {
           </button>
         </form>
       </div>
-    </div>
+     </div>
+    //  </div>
   );
 };
 

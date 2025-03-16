@@ -14,6 +14,8 @@ import PostJobForm from "./components/PostJob";
 import FeaturedJobs from './components/FeaturedJobs';
 import RecentlyPostedJobs from './components/RecentlyPostedJobs';
 
+import { useRef } from "react";
+
 
 function App() {
   // const [message, setMessage] = useState("");
@@ -24,11 +26,18 @@ function App() {
   //     .catch(error => console.log(error));
   // }, []);
 
+  const postJobRef = useRef(null);
+
+  const scrollToForm = () => {
+    if (postJobRef.current) {
+      postJobRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div>
 
       <Router>
-      <Header />
+      <Header scrollToForm={scrollToForm} />
       
       <Routes>
       <Route path="/" element={
@@ -37,7 +46,9 @@ function App() {
 
             <FeaturedJobs />  
             <RecentlyPostedJobs/>
+            <div ref={postJobRef} className="bg-gray-200 p-8">
              <PostJobForm />
+             </div>
 
           </>
         } />

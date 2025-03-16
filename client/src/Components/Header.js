@@ -3,11 +3,13 @@ import logo from '../assests/Side_logo_update_svg_4.svg';
 import { Link } from "react-router-dom";
 
 
-const Header = () => {
+const Header = ({ scrollToForm }) => {
     const styles = {
         fontFamily: "Montserrat, sans-serif", // Capital "F" in "fontFamily"
         fontWeight: "520" // Capital "W" in "fontWeight"
       };
+
+    
       
   return (
     <div>
@@ -19,7 +21,7 @@ const Header = () => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/post-job">Post a Job</Link>
+                <button onClick={scrollToForm} className="hover:text-amber-800">Post a Job</button>
                 </li>
                 <li>Browse Jobs</li>
                 <li>About</li>

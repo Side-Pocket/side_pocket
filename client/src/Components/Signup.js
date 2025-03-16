@@ -18,6 +18,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:5000/auth/signup", user);
+      alert("Account created successfully! Now login with your credentials.");
       navigate("/login"); // Redirect after signup
     } catch (error) {
       console.error("Signup error:", error.response?.data || error.message);

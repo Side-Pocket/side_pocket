@@ -18,6 +18,7 @@ const Login = () => {
     try {
       const response = await axios.post("http://localhost:5000/auth/login", user);
       console.log("Login Success:", response.data);
+      alert("Login Successful!");
       navigate("/"); // Redirect to Home after login
     } catch (error) {
       console.error("Login error:", error.response?.data || error.message);
