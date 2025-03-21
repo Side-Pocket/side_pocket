@@ -33,19 +33,19 @@ const jobs = [
 const FeaturedJobs = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto py-10">
-        <h2 className="text-4xl font-semibold text-center mb-6">Featured Jobs</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-11 ">
+      <div className="max-w-7xl mx-auto py-10 px-4 md:px-8">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8">Featured Jobs</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {jobs.map((job) => (
-            <div key={job.id} className="bg-gray-100 rounded-lg shadow-md overflow-hidden h-[500px] w-[400px] flex flex-col justify-between">
+            <div key={job.id} className="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
               <div>
-                <div className="flex justify-between p-3 bg-gray-200">
+                <div className="flex justify-between p-3 bg-gray-200 text-sm md:text-base">
                   <span className="font-semibold">Bid - {job.bid}</span>
-                  <span className="text-gray-600">Time remaining - {job.timeRemaining}</span>
+                  <span className="text-gray-600">Time left - {job.timeRemaining}</span>
                 </div>
-                <img src={job.image} alt={job.title} className="w-full h-[400px] object-cover " />
+                <img src={job.image} alt={job.title} className="w-full h-64 object-cover" />
               </div>
-              <div className="p-4 flex justify-between">
+              <div className="p-4 flex justify-between items-center text-sm md:text-base">
                 <span className="font-medium">{job.title}</span>
                 <span className="text-gray-600">{job.distance}</span>
               </div>
@@ -53,7 +53,7 @@ const FeaturedJobs = () => {
           ))}
         </div>
       </div>
-        <hr className="border-t-2 border-solid mt-5" />
+      <hr className="border-t-2 border-solid mt-5" />
     </>
   );
 };
