@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Hero from './components/HeroSection';
+import About from "./components/About";
 
 import PostJobForm from "./components/PostJob";
 
@@ -55,6 +56,7 @@ function App() {
   
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     
       <Footer />
