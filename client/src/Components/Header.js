@@ -75,7 +75,10 @@ const Header = ({ scrollToForm }) => {
             </button>
           </li>
           <li className="block py-2 hover:text-amber-600">Browse Jobs</li>
-          <li className="block py-2 hover:text-amber-600">About</li>
+          <li>
+  <Link to="/about" className="hover:text-amber-800">About</Link>
+</li>
+
           <li>
             <Link to="/signup" className="block py-2 hover:text-amber-600">
               Sign Up
