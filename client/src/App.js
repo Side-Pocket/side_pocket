@@ -1,7 +1,7 @@
 // import React, { useEffect, useState } from "react";
 // import axios from "axios";
 
-import Header from "./components/header";
+import Header from "./components/Header";
 import Footer from './components/Footer';
 // import { Router, Route, Routes } from "react-router";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
