@@ -1,7 +1,6 @@
-# filepath: c:\Users\Sanket\Desktop\Side pocket\side_pocket\netlify.toml
 [build]
   command = "npm run build"
-  publish = "/build"
+  publish = "client/build"
 
 [build.environment]
   NODE_VERSION = "16"
