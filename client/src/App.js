@@ -2,7 +2,7 @@
 // import axios from "axios";
 
 import Header from "./components/Header";
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 // import { Router, Route, Routes } from "react-router";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
@@ -59,7 +59,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
     
-      <Footer />
+      {/* <Footer /> */}
     </Router>
 
     </div>
